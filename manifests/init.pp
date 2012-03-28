@@ -1,4 +1,4 @@
-class monit ($mailserver = 'localhost', $alert_email, $alert_scope){
+class monit ($mailserver = 'localhost', $alert_email = undef, $alert_scope = undef){
 
 	file { "/etc/default/monit":
 		owner   => root,
